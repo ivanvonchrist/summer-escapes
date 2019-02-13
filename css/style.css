@@ -1,3 +1,20 @@
+/* Table of Contents
+
+- Basics
+- Header
+- Navigation
+- Hero
+- Section, Article, Aside
+- Footer
+- Flex Utilities
+- Typography
+- Links
+- Lists
+- Misc
+- Responsive CSS
+
+*/
+
 /* Basics */
 
 html, body {
@@ -197,7 +214,7 @@ aside input[type=submit]:hover {
 aside input[type=text]:focus {
     outline: none; }
 
-/*  Classes to fix text elements on some Flexbox items */
+/*  Flex Utilities */
 
 .flex {
     display: -webkit-box;
@@ -218,17 +235,64 @@ aside input[type=text]:focus {
     -ms-flex-pack: center;
     justify-content: center; }
 
+/* Typography */
+
+body { 
+    font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    color: #001021;
+    font-size: 1em; }
+
+h1, h2, h3, h4, h5, h6 { 
+    font-weight: bold;
+    color: #0CAADC; }
+
+p {
+    font-size: 0.9em;
+    line-height: 3em;
+    color: #001021; }
+
+/* Links */
+
+a {
+    font-size: 0.9em;
+    color: #11B5E4;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: .20s ease; }
+
+a:hover {
+    color: #1481BA; }
+
+a:active {
+    color: #1481BA; }
+
+.active {
+    color: #1481BA; }
+
+/* Lists */
+
+ul {
+    margin: 0;
+    padding: 0; }
+
+/* Misc */
+
+hr {
+    margin: 1.5em 1.5em 0 1.5em;
+    border-width: 0;
+    border-top: 1px solid #CCCCCC; }
+
 /* Responsive CSS */
 
-/* For Screen and Tablet */ @media (min-width: 800px) {
+/* For Screen and Tablet */ @media (min-width: 768px) {
     
 #container {
     width: 80%; }}
 
-/* For Mobile Devices */ @media (max-width: 800px) {
+/* For Mobile Devices */ @media (max-width: 768px) {
     
 #container {
-    width: 100%;}
+    width: 100%; }
 
 header {
     height: auto;
@@ -282,61 +346,20 @@ nav ul li {
     border-width: 1px 1px 1px 1px;
     border-radius: 32px 32px 32px 32px; }
 
+section h3 {
+    margin: 3em 1.5em 1.5em 1.5em; }
+
+section p {
+    margin: 0 2em 3em 2em; }
+
 article {
     flex: 0 0 100%; }
 
 aside {
-    flex: 0 0 100%; }}
+    flex: 0 0 100%; }
 
 p {
-    line-height: 1em }
-
-/* Typography */
-
-body { 
-    font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    color: #001021;
-    font-size: 1em; }
-
-h1, h2, h3, h4, h5, h6 { 
-    font-weight: bold;
-    color: #0CAADC; }
-
-p {
-    font-size: 0.9em;
-    line-height: 3em;
-    color: #001021; }
-
-/* Links */
-
-a {
-    font-size: 0.9em;
-    color: #11B5E4;
-    text-decoration: none;
-    letter-spacing: 0.05em;
-    transition: .20s ease; }
-
-a:hover {
-    color: #1481BA; }
-
-a:active {
-    color: #1481BA; }
-
-.active {
-    color: #1481BA; }
-
-/* Lists */
-
-ul {
-    margin: 0;
-    padding: 0; }
-
-/* Misc */
-
-hr {
-    margin: 1.5em 1.5em 0 1.5em;
-    border-width: 0;
-    border-top: 1px solid #CCCCCC; }
+    line-height: 2em; }}
 
 /* Media Queries - Reference */
 
