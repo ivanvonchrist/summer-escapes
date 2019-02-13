@@ -23,54 +23,58 @@
 </head>
 <body>
     <div id="container">
-        <header class="justify">
-            <img src="images/summer-escapes-logo.png">
-        </header>
-        <nav class="flex justify">
-            <ul>
-                <li class="active justify"><a class="active" href="#">Home</a></li>
-                <li class="justify"><a href="#">Reviews</a></li>
-                <li class="justify"><a href="#">Feedback</a></li>
-                <li class="justify"><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <header class="justify">
+                <img src="images/summer-escapes-logo.png">
+            </header>
+            <nav class="flex justify">
+                <ul>
+                    <li class="active justify"><a class="active" href="#">Home</a></li>
+                    <li class="justify"><a href="#">Reviews</a></li>
+                    <li class="justify"><a href="#">Feedback</a></li>
+                    <li class="justify"><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
         <div id="hero" class="flex justify">
             <form>
                 <input type="text" placeholder="Where would you rather be?" onfocus="this.placeholder =''" onfocusout="this.placeholder = 'Where would you rather be?'">
                 <input type="submit" value="Go!" action="/index.html">
             </form>
         </div>
-        <section class="flex content">
-            <article>
-                <h3>Your next destination awaits...</h3>
-                <p>
-                    Pellentesque maximus enim tellus, accumsan mattis ex sagittis vitae. Sed consectetur bibendum vehicula. Duis eros ante, vulputate sit amet enim ut, interdum consequat augue. Etiam sit amet elementum nisl. Pellentesque porttitor diam a sagittis semper. Nullam viverra leo nec accumsan viverra. Nullam in ultricies sapien.
-                </p>
-                <p>
-                    Pellentesque maximus enim tellus, accumsan mattis ex sagittis vitae. Sed consectetur bibendum vehicula. Duis eros ante, vulputate sit amet enim ut, interdum consequat augue. Etiam sit amet elementum nisl. Pellentesque porttitor diam a sagittis semper. Nullam viverra leo nec accumsan viverra. Nullam in ultricies sapien.
-                </p>
-            </article>
-            <aside>
-                <h3>Want to hear from us?</h3>
-                <p>
-                   Feel free to subscribe to our mailing list if you'd like to keep up-to-date with our latest destination reviews! <i class="fas fa-heart"></i>
-                    <form>
-                        <input type="text" name="email" placeholder="Your e-mail address...">
-                        <br><br>
-                        <input type="submit" value="Submit">
-                    </form>
-                </p>
-                <hr>
-                <h3>Popular Desitnations</h3>
-                <p>
-                    <ul>
-                        <li><a href="#">Lakehouse</a></li>
-                        <li><a href="#">Beach-front Cabin</a></li>
-                        <li><a href="#">Taco Bell</a></li>
-                    </ul>
-                </p>
-            </aside>
-        </section>
+        <div class="wrapper">
+            <section class="flex content">
+                <article>
+                    <h3>Your next destination awaits...</h3>
+                    <p>
+                        Pellentesque maximus enim tellus, accumsan mattis ex sagittis vitae. Sed consectetur bibendum vehicula. Duis eros ante, vulputate sit amet enim ut, interdum consequat augue. Etiam sit amet elementum nisl. Pellentesque porttitor diam a sagittis semper. Nullam viverra leo nec accumsan viverra. Nullam in ultricies sapien.
+                    </p>
+                    <p>
+                        Pellentesque maximus enim tellus, accumsan mattis ex sagittis vitae. Sed consectetur bibendum vehicula. Duis eros ante, vulputate sit amet enim ut, interdum consequat augue. Etiam sit amet elementum nisl. Pellentesque porttitor diam a sagittis semper. Nullam viverra leo nec accumsan viverra. Nullam in ultricies sapien.
+                    </p>
+                </article>
+                <aside>
+                    <h3>Want to hear from us?</h3>
+                    <p>
+                       Feel free to subscribe to our mailing list if you'd like to keep up-to-date with our latest destination reviews! <i class="fas fa-heart"></i>
+                        <form>
+                            <input type="text" name="email" placeholder="Your e-mail address...">
+                            <br><br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </p>
+                    <hr>
+                    <h3>Popular Desitnations</h3>
+                    <p>
+                        <ul>
+                            <li><a href="#">Lakehouse</a></li>
+                            <li><a href="#">Beach-front Cabin</a></li>
+                            <li><a href="#">Taco Bell</a></li>
+                        </ul>
+                    </p>
+                </aside>
+            </section>
+        </div>
         <footer>
             <p>
                 <a href="mailto:"><i class="fas fa-envelope"></i></a>

@@ -9,14 +9,21 @@ html, body {
 
 #container {
     position: relative;
+    width: 100%;
     height: 100%;
+    margin: auto;
+    padding: 0; }
+
+/* Wrapper */
+
+.wrapper {
+    width: 80%;
+    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: auto;
-    padding: 0; }
+    flex-wrap: wrap; }
 
 /* Header */
 
@@ -218,18 +225,29 @@ aside input[type=text]:focus {
     -ms-flex-pack: center;
     justify-content: center; }
 
-/* Responsive CSS */
+/* Typography */
 
-/* For Screen and Tablet */ @media (min-width: 800px) {
-    
-#container {
-    width: 80%; }}
+body { 
+    font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    color: #001021;
+    font-size: 1em; }
+
+h1, h2, h3, h4, h5, h6 { 
+    font-weight: bold;
+    color: #0CAADC; }
+
+p {
+    font-size: 0.9em;
+    line-height: 3em;
+    color: #001021; }
+
+/* Responsive CSS */
 
 /* For Mobile Devices */ @media (max-width: 800px) {
     
 #container {
     width: 100%;}
-
+    
 header {
     height: auto;
     -webkit-box-flex: 1;
@@ -282,6 +300,12 @@ nav ul li {
     border-width: 1px 1px 1px 1px;
     border-radius: 32px 32px 32px 32px; }
 
+section h3 {
+    margin: 3em 1.5em 1.5em 1.5em; }
+
+section p {
+    margin: 0 2em 3em 2em; }
+    
 article {
     flex: 0 0 100%; }
 
@@ -289,23 +313,7 @@ aside {
     flex: 0 0 100%; }}
 
 p {
-    line-height: 1em }
-
-/* Typography */
-
-body { 
-    font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    color: #001021;
-    font-size: 1em; }
-
-h1, h2, h3, h4, h5, h6 { 
-    font-weight: bold;
-    color: #0CAADC; }
-
-p {
-    font-size: 0.9em;
-    line-height: 3em;
-    color: #001021; }
+    line-height: 2em; }
 
 /* Links */
 
