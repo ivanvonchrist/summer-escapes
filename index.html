@@ -12,7 +12,7 @@
     
     <!-- Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Flamenco:300|Montserrat">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -24,9 +24,9 @@
 <body>
     <div id="container">
         <header class="justify">
-            <h1>Summer Escapes</h1>
+            <img src="images/summer-escapes-logo.png">
         </header>
-        <nav class="display justify">
+        <nav class="flex justify">
             <ul>
                 <li class="active justify"><a class="active" href="#">Home</a></li>
                 <li class="justify"><a href="#">Reviews</a></li>
@@ -34,10 +34,13 @@
                 <li class="justify"><a href="#">Contact Us</a></li>
             </ul>
         </nav>
-        <div id="hero" class="display justify">
-            <h1>Where would you rather be?</h1>
+        <div id="hero" class="flex justify">
+            <form>
+                <input type="text" placeholder="Where would you rather be?" onfocus="this.placeholder =''" onfocusout="this.placeholder = 'Where would you rather be?'">
+                <input type="submit" value="Go!" action="/index.html">
+            </form>
         </div>
-        <section class="display content">
+        <section class="flex content">
             <article>
                 <h3>Your next destination awaits...</h3>
                 <p>
@@ -51,8 +54,6 @@
                 <h3>Want to hear from us?</h3>
                 <p>
                    Feel free to subscribe to our mailing list if you'd like to keep up-to-date with our latest destination reviews! <i class="fas fa-heart"></i>
-                </p>
-                <p>
                     <form>
                         <input type="text" name="email" placeholder="Your e-mail address...">
                         <br><br>
@@ -62,7 +63,11 @@
                 <hr>
                 <h3>Popular Desitnations</h3>
                 <p>
-                    Lorem Ipsum...
+                    <ul>
+                        <li><a href="#">Lakehouse</a></li>
+                        <li><a href="#">Beach-front Cabin</a></li>
+                        <li><a href="#">Taco Bell</a></li>
+                    </ul>
                 </p>
             </aside>
         </section>
