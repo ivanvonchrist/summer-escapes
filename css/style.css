@@ -1,4 +1,6 @@
-/* Table of Contents
+/*
+
+--- Table of Contents ---
 
 - Basics
 - Header
@@ -6,12 +8,14 @@
 - Hero
 - Section, Article, Aside
 - Footer
-- Flex Utilities
 - Typography
 - Links
 - Lists
+- Forms
+- Flex Utilities
 - Misc
 - Responsive CSS
+- Media Queries - Reference
 
 */
 
@@ -179,6 +183,46 @@ footer p i {
     font-size: 2em;
     margin: 0 0.3em; }
 
+/* Typography */
+
+body { 
+    font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    color: #001021;
+    font-size: 1em; }
+
+h1, h2, h3, h4, h5, h6 { 
+    font-weight: bold;
+    color: #0CAADC; }
+
+p {
+    font-size: 0.9em;
+    line-height: 3em;
+    color: #001021; }
+
+/* Links */
+
+a {
+    font-size: 0.9em;
+    color: #11B5E4;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: .20s ease; }
+
+a:hover {
+    color: #1481BA; }
+
+a:active {
+    color: #1481BA; }
+
+.active {
+    color: #1481BA; }
+
+/* Lists */
+
+ul {
+    margin: 0;
+    padding: 0; }
+
 /* Forms */
 
 hero form, aside form {
@@ -234,46 +278,6 @@ aside input[type=text]:focus {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-
-/* Typography */
-
-body { 
-    font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    color: #001021;
-    font-size: 1em; }
-
-h1, h2, h3, h4, h5, h6 { 
-    font-weight: bold;
-    color: #0CAADC; }
-
-p {
-    font-size: 0.9em;
-    line-height: 3em;
-    color: #001021; }
-
-/* Links */
-
-a {
-    font-size: 0.9em;
-    color: #11B5E4;
-    text-decoration: none;
-    letter-spacing: 0.05em;
-    transition: .20s ease; }
-
-a:hover {
-    color: #1481BA; }
-
-a:active {
-    color: #1481BA; }
-
-.active {
-    color: #1481BA; }
-
-/* Lists */
-
-ul {
-    margin: 0;
-    padding: 0; }
 
 /* Misc */
 
@@ -363,5 +367,5 @@ p {
 
 /* Media Queries - Reference */
 
-@media (min-width: 800px) {} /* Tablet & Screen */ 
-@media (max-width: 800px) {} /* Mobile Devices */
+@media (min-width: 768px) {} /* Tablet & Screen */ 
+@media (max-width: 768px) {} /* Mobile Devices */
