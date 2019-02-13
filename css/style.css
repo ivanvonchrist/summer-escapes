@@ -1,3 +1,25 @@
+/*
+
+--- Table of Contents ---
+
+- Basics
+- Wrapper
+- Header
+- Navigation
+- Hero
+- Section, Article, Aside
+- Footer
+- Typography
+- Links
+- Lists
+- Forms
+- Flex Utilities
+- Misc
+- Responsive CSS
+- Media Queries - Reference
+
+*/
+
 /* Basics */
 
 html, body {
@@ -169,6 +191,46 @@ footer p i {
     font-size: 2em;
     margin: 0 0.3em; }
 
+/* Typography */
+
+body { 
+    font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    color: #001021;
+    font-size: 1em; }
+
+h1, h2, h3, h4, h5, h6 { 
+    font-weight: bold;
+    color: #0CAADC; }
+
+p {
+    font-size: 0.9em;
+    line-height: 3em;
+    color: #001021; }
+
+/* Links */
+
+a {
+    font-size: 0.9em;
+    color: #11B5E4;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: .20s ease; }
+
+a:hover {
+    color: #1481BA; }
+
+a:active {
+    color: #1481BA; }
+
+.active {
+    color: #1481BA; }
+
+/* Lists */
+
+ul {
+    margin: 0;
+    padding: 0; }
+
 /* Forms */
 
 hero form, aside form {
@@ -204,7 +266,7 @@ aside input[type=submit]:hover {
 aside input[type=text]:focus {
     outline: none; }
 
-/*  Classes to fix text elements on some Flexbox items */
+/*  Flex Utilies */
 
 .flex {
     display: -webkit-box;
@@ -225,25 +287,16 @@ aside input[type=text]:focus {
     -ms-flex-pack: center;
     justify-content: center; }
 
-/* Typography */
+/* Misc */
 
-body { 
-    font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    color: #001021;
-    font-size: 1em; }
-
-h1, h2, h3, h4, h5, h6 { 
-    font-weight: bold;
-    color: #0CAADC; }
-
-p {
-    font-size: 0.9em;
-    line-height: 3em;
-    color: #001021; }
+hr {
+    margin: 1.5em 1.5em 0 1.5em;
+    border-width: 0;
+    border-top: 1px solid #CCCCCC; }
 
 /* Responsive CSS */
 
-/* For Mobile Devices */ @media (max-width: 800px) {
+/* For Mobile Devices */ @media (max-width: 768px) {
     
 #container {
     width: 100%;}
@@ -310,43 +363,12 @@ article {
     flex: 0 0 100%; }
 
 aside {
-    flex: 0 0 100%; }}
+    flex: 0 0 100%; }
 
 p {
-    line-height: 2em; }
-
-/* Links */
-
-a {
-    font-size: 0.9em;
-    color: #11B5E4;
-    text-decoration: none;
-    letter-spacing: 0.05em;
-    transition: .20s ease; }
-
-a:hover {
-    color: #1481BA; }
-
-a:active {
-    color: #1481BA; }
-
-.active {
-    color: #1481BA; }
-
-/* Lists */
-
-ul {
-    margin: 0;
-    padding: 0; }
-
-/* Misc */
-
-hr {
-    margin: 1.5em 1.5em 0 1.5em;
-    border-width: 0;
-    border-top: 1px solid #CCCCCC; }
+    line-height: 2em; }}
 
 /* Media Queries - Reference */
 
-@media (min-width: 800px) {} /* Tablet & Screen */ 
-@media (max-width: 800px) {} /* Mobile Devices */
+@media (min-width: 768px) {} /* Tablet & Screen */ 
+@media (max-width: 768px) {} /* Mobile Devices */
