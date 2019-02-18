@@ -214,6 +214,8 @@ a {
     color: #11B5E4;
     text-decoration: none;
     letter-spacing: 0.05em;
+    -webkit-transition: .20s ease;
+    -o-transition: .20s ease;
     transition: .20s ease; }
 
 a:hover {
@@ -299,7 +301,7 @@ hr {
 /* For Mobile Devices */ @media (max-width: 768px) {
     
 #container {
-    width: 100%;}
+    width: 100%; }
     
 header {
     height: auto;
@@ -340,8 +342,8 @@ nav ul li {
     width: 100%;
     font-size: 0.8em;
     border: 0 solid white;
-    border-width: 1px 1px 1px 1px;
-    border-radius: 32px 32px 32px 32px; }
+    border-width: 1px;
+    border-radius: 32px; }
 
 #hero input[type=submit] {
     float: none;
@@ -350,8 +352,8 @@ nav ul li {
     width: 100%;
     font-size: 0.8em;
     border: 0 solid #11B5E4;
-    border-width: 1px 1px 1px 1px;
-    border-radius: 32px 32px 32px 32px; }
+    border-width: 1px;
+    border-radius: 32px; }
 
 section h3 {
     margin: 3em 1.5em 1.5em 1.5em; }
