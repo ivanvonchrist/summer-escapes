@@ -116,7 +116,7 @@ nav ul li {
     border: 0 solid white;
     border-width: 1px 0 1px 1px;
     border-radius: 32px 0 0 32px;
-    font-size: 0.8em;
+    font-size: 1em;
     color: #1481BA;
     text-align: center; }
 
@@ -133,7 +133,7 @@ nav ul li {
     border: 0 solid #11B5E4;
     border-width: 1px 1px 1px 0;
     border-radius: 0 32px 32px 0;
-    font-size: 0.8em;
+    font-size: 1em;
     color: white;
     background-color: #11B5E4;
     transition: .20s ease; }
@@ -188,7 +188,7 @@ aside i {
     flex: 1 0 40%; }
 
 #ratings {
-    font-size: 0.9em;
+    font-size: 1em;
     text-align: center;
     margin: 3em auto; }
 
@@ -244,7 +244,7 @@ aside img {
 label {
     margin-right: 0.5em;
     min-width: 4em;
-    font-size: 0.9em;
+    font-size: 1em;
     text-align: right; }
 
 .spc {
@@ -277,7 +277,7 @@ label {
 
 footer {
     flex: 0 0 100%;
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: center;
     background-color: white; }
 
@@ -295,21 +295,21 @@ footer p i {
 body { 
     font-family: "Lato", sans-serif;
     color: #2E3B49;
-    font-size: 0.9em; }
+    font-size: 1em; }
 
 h1, h2, h3, h4 { 
     font-weight: bold;
     color: #0CAADC; }
 
 p {
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 3em;
     color: #2E3B49; }
 
 /* Links */
 
 a {
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: bold;
     color: #11B5E4;
     text-decoration: none;
@@ -363,7 +363,7 @@ aside input[type=text], select {
     border: 1px solid #CCC;
     border-radius: 4px;
     font-family: "Lato";
-    font-size: 0.8em; }
+    font-size: 1em; }
 
 select {
     background-image: url(../images/arrow.png);
@@ -382,7 +382,7 @@ aside input[type=submit] {
     border: none;
     border-radius: 4px;
     font-family: "Lato";
-    font-size: 0.8em;
+    font-size: 1em;
     transition: .20s ease; }
 
 aside input[type=submit]:hover {
@@ -502,7 +502,7 @@ hr {
         margin: 1em 0;
         padding: 1em;
         width: 100%;
-        font-size: 0.8em;
+        font-size: 1em;
         border: 0 solid white;
         border-width: 1px;
         border-radius: 32px; }
@@ -512,7 +512,7 @@ hr {
         margin: 1em 0;
         padding: 1em;
         width: 100%;
-        font-size: 0.8em;
+        font-size: 1em;
         border: 0 solid #11B5E4;
         border-width: 1px;
         border-radius: 32px; }
