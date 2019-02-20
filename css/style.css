@@ -5,13 +5,16 @@
 - Basics
 - Header
 - Navigation
-- Hero
+- Hero, Mini
 - Section, Article, Aside
+- Review Page Specific
+- Feedback Page Specific
+- Contact Us Page Specific
 - Footer
 - Typography
 - Links
 - Lists
-- Forms
+- Forms, Input
 - Flex Utilities
 - Misc
 - Responsive CSS
@@ -26,7 +29,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: white; } /* alternatively #001021 */
+    background-color: white; }
 
 #container {
     position: relative;
@@ -67,6 +70,7 @@ nav {
     background-color: white; }
 
 nav ul {
+    margin-right: 1.5em;
     list-style: none; }
 
 nav ul li {
@@ -75,7 +79,7 @@ nav ul li {
     display: inline-flex;
     margin-left: 1.5em; }
 
-/* Hero */
+/* Hero, Mini */
 
 #hero, #mini1, #mini2, #mini3 {
     height: 55%;
@@ -102,10 +106,9 @@ nav ul li {
     background-image: url(../images/mini-3.png);}
 
 #hero form {
-    margin: 0 0 0 30%;
-    width: 60%;
     font-family: "Lato";
-    font-size: 1em; }
+    font-size: 1em;
+    width: 60%; }
 
 #hero input[type=text] {
     -webkit-box-sizing:border-box;
@@ -188,11 +191,7 @@ aside i {
     flex: 1 0 40%; }
 
 #ratings {
-    font-size: 1em;
-    text-align: center;
-    margin: 3em auto; }
-
-#ratings h3 {
+    margin: 6em 0;
     text-align: center; }
 
 #ratings p {
@@ -203,25 +202,28 @@ aside i {
     margin-bottom: 1em; }
 
 aside img {
-    max-width: 70%;
+    max-width: 80%;
     height: auto;
     margin: 0 auto;
-    margin-top: 3em;
+    margin-top: 0;
     border-radius: 4px; }
 
-#stars1::after {
+#stars1, #stars2, #stars3 {
+    font-size: 0.9em; }
+
+#stars1::after { /* stars next to rating */
     content: "\f005\f005\f005\f005";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: #11b5e4; }
 
-#stars2::after {
+#stars2::after { /* stars next to rating */
     content: "\f005\f005\f005\f005\f005";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: #11b5e4; }
 
-#stars3::after {
+#stars3::after { /* stars next to rating */
     content: "\f005\f005\f005";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -247,7 +249,7 @@ label {
     font-size: 1em;
     text-align: right; }
 
-.spc {
+.spc { /* space out form elements */
     margin-top: 1px;
     margin-bottom: 1em; }
 
@@ -270,8 +272,9 @@ label {
     text-align: center; }
 
 #map iframe {
+    margin-bottom: 1em;
     width: 100%;
-    height: 250px; }
+    height: 350px; }
 
 /* Footer */
 
@@ -281,8 +284,12 @@ footer {
     text-align: center;
     background-color: white; }
 
+footer a {
+    font-weight: normal; }
+
 footer p {
     margin: 2em 0;
+    font-size: 1em;
     line-height: 0;
     color: #11B5E4; }
 
@@ -329,12 +336,11 @@ a:active {
     color: #1481BA; }
 
 .active {
-    color: white;
-    padding: 0.3em;
+    padding: 1em;
     border-radius: 4px;
     background-color: #11B5E4; }
 
-.active:hover {
+.active a, .active a:hover {
     color: white; }
 
 /* Lists */
@@ -343,10 +349,7 @@ ul {
     margin: 0;
     padding: 0; }
 
-/* Forms */
-
-hero form {
-    margin: 1.5em; }
+/* Forms, Input */
 
 aside form {
     padding-bottom: 1.5em }
@@ -375,7 +378,7 @@ aside input[type=submit] {
     -moz-appearance: none;
     appearance: none;
     float: right;
-    margin-right: 4em;
+    margin: 0 4em 1em 0;
     padding: 1em 1.2em;
     color: white;
     background-color: #11B5E4;
@@ -409,14 +412,11 @@ aside input[type=radio], aside input[type=checkbox] {
     display: -ms-inline-flexbox;
     display: inline-flex; }
 
-.justify {
+.column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+    flex-direction: column; }
 
 .jus-ctr {
     -webkit-box-pack: center;
@@ -428,23 +428,13 @@ aside input[type=radio], aside input[type=checkbox] {
     -ms-flex-align: center;
     align-items: center; }
 
-.row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row;
-    flex-flow: row; }
-
-.wrap {
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap; }
-
 /* Misc */
 
 hr {
     flex: 0 0 100%;
     margin: 0 auto;
     border-width: 0;
-    border-top: 1px solid #CCCCCC; }
+    border-top: 1px solid #e1e1e1; }
 
 /* Responsive CSS */
 
@@ -458,7 +448,7 @@ hr {
     #container {
         width: 100%; }
 
-    header {
+    header, nav {
         height: auto;
         -webkit-box-flex: 1;
         -ms-flex: 0 0 100%;
@@ -468,32 +458,29 @@ hr {
         max-width: 40%;
         height: auto;
         margin: 1.5em auto; } 
-
+    
     nav {
-        height: auto;
-        -webkit-box-flex: 1;
-        -ms-flex: 1 0 100%;
-        flex: 1 0 100%;
         text-align: center; }
-    nav ul li {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        padding: 1.5em 2em;
-        margin-left: 0; }
-
+    
     nav ul {
         margin: 0;
         padding: 0; }
+
+    nav ul li {
+        display: block;
+        padding: 2em 2em;
+        margin-left: 0; }
     
     .active {
+        padding: 2em 2em;
         border-radius: 0;
-        padding: 1em 0.5em; }
+        background-color: #11B5E4; }
 
     #hero {
-        height: 30%; }
+        height: 35%; }
 
     #hero form {
+        display: block;
         margin: 0 10%;
         width: 80%; }
 
@@ -548,10 +535,24 @@ hr {
         flex: 0 0 100%; }
     
     aside img {
-        max-width: 90%; }
+        margin-top: 0;
+        max-width: 95%; }
         
     #ratings {
         margin: 0 auto; }
+    
+    #fb {
+        margin: 0 2em; }
+    
+    aside input[type=text] {
+        margin: 0 2em;
+        width: calc(100% - 4em); }
+    
+    aside input[type=submit] {
+        margin-right: 2em; }
+    
+    .input-width {
+        margin: 0 2em !important; }
     
     label {
         margin-bottom: 1em;
