@@ -269,13 +269,21 @@ label {
     font-weight: 700; }
 
 .contact-item p {
-    margin: 1em 1em 3em 1em;
+    margin: 1em 1em 1em 1em;
     text-align: center; }
 
 #map iframe {
     margin-bottom: 1em;
     width: 100%;
     height: 350px; }
+
+address {
+    margin-bottom: 3em;
+    color: #2E3B49;
+    line-height: 3em;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold; }
 
 /* Footer */
 
@@ -407,11 +415,6 @@ aside input[type=radio], aside input[type=checkbox] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-
-.inline {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex; }
 
 .column {
     -webkit-box-orient: vertical;
